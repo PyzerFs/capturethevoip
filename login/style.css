@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #657db6 0%, #1e293b 100%);
+    color: #e2e8f0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+.login-box {
+    background: rgba(53, 70, 99, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(136, 175, 230, 0.3);
+    border-radius: 16px;
+    padding: 40px 32px;
+    box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.shield {
+    font-size: 64px;
+    margin-bottom: 8px;
+    color: #22d3ee;
+    filter: drop-shadow(0 0 10px rgba(34, 211, 238, 0.5));
+}
+
+h1 {
+    font-size: 2.1rem;
+    color: #e2e8f0;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 32px;
+    font-size: 1.05rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+input {
+    padding: 14px 16px;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    background: #1e293b;
+    color: #e2e8f0;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #22d3ee;
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.15);
+}
+
+.btn-login {
+    margin-top: 12px;
+    padding: 14px;
+    background: #0ea5e9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.btn-login:hover {
+    background: #0284c7;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px -10px rgba(14, 165, 233, 0.4);
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 0.92rem;
+}
+
+.forgot-password a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.forgot-password a:hover {
+    color: #60a5fa;
+}
+
+footer {
+    text-align: center;
+    margin-top: 32px;
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+/* Espaço para mensagens de erro do PHP */
+.error,
+.success {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.error {
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid #ef4444;
+    color: #fca5a5;
+}
+
+.success {
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid #22c55e;
+    color: #86efac;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VoIP Monitor - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- Opcional: ícones (Font Awesome ou similar) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="top-bar">
+        <div class="logo-section">
+            <div class="shield">🛡️</div>
+            <div>
+                <h1>VoIP Security</h1>
+                <span>Monitoramento em tempo real</span>
+            </div>
+        </div>
+        <div class="status">
+            <span class="dot online"></span> Online
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="stats-grid">
+            <div class="card stat-card alert">
+                <div class="icon"><i class="fas fa-exclamation-triangle"></i></div>
+                <div class="value">8</div>
+                <div class="label">Alertas Hoje</div>
+                <div class="sub">Últimas 24h</div>
+            </div>
+
+            <div class="card stat-card critical">
+                <div class="icon"><i class="fas fa-shield-halved"></i></div>
+                <div class="value">4</div>
+                <div class="label">Críticos</div>
+                <div class="sub">Em andamento</div>
+            </div>
+
+            <div class="card stat-card requests">
+                <div class="icon"><i class="fas fa-wave-square"></i></div>
+                <div class="value">342</div>
+                <div class="label">Req/s Média</div>
+                <div class="sub">SIP</div>
+            </div>
+
+            <div class="card stat-card ips">
+                <div class="icon"><i class="fas fa-globe"></i></div>
+                <div class="value">8</div>
+                <div class="label">IPs Únicos</div>
+                <div class="sub">Últimas 24h</div>
+            </div>
+        </section>
+
+        <section class="alerts-section">
+            <h2>Alertas Recentes</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>IP</th>
+                            <th>Tipo</th>
+                            <th>Detalhe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2026-03-01 08:33:12</td>
+                            <td>192.168.1.45</td>
+                            <td><span class="tag brute">Brute Force</span></td>
+                            <td>500+ tentativas de login SIP em 60s</td>
+                        </tr>
+                        <tr>
+                            <td>2026-03-01 07:58:19</td>
+                            <td>10.0.0.112</td>
+                            <td><span class="tag scan">Port Scan</span></td>
+                            <td>Varredura de portas SIP detectada (5060-5080)</td>
+                        </tr>
+                        <tr>
+                            <td>2026-03-01 07:45:02</td>
+                            <td>203.0.113.88</td>
+                            <td><span class="tag dos">DoS</span></td>
+                            <td>Flood de INVITE — 2.3k req/s</td>
+                        </tr>
+                        <tr>
+                            <td>2026-03-01 07:38:15</td>
+                            <td>172.16.0.33</td>
+                            <td><span class="tag spoof">Spoofing</span></td>
+                            <td>Caller-ID falsificado detectado (From: "Suporte" <sip:suporte@provedor.com>)</td>
+                        </tr>
+                        <tr>
+                            <td>2026-03-01 07:12:44</td>
+                            <td>192.168.1.78</td>
+                            <td><span class="tag brute">Brute Force</span></td>
+                            <td>Tentativas de registro com credenciais inválidas (user123 / várias senhas)</td>
+                        </tr>
+                        <tr>
+                            <td>2026-03-01 06:55:21</td>
+                            <td>45.79.112.145</td>
+                            <td><span class="tag dos">DoS</span></td>
+                            <td>Alta taxa de OPTIONS flood (1.8k req/min)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 VoIP Security PyzerFs • Sistema de Proteção e Interceptação VoiP
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VoIP Monitor - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo">
+                <div class="shield">🛡️</div>
+                <h1>VoIP Monitor</h1>
+            </div>
+
+            <p class="subtitle">Acesse o painel de monitoramento</p>
+
+            <!-- ================== INÍCIO - Área de integração PHP ================== -->
+            <!-- Aqui você pode colocar mensagens de erro/sucesso vindas do PHP -->
+            <!-- Exemplo: <div class="error">Usuário ou senha inválidos</div> -->
+
+
+            <!-- ================== FIM - Área de integração PHP ================== -->
+
+            <form action="login.php" method="POST" class="login-form">
+                <div class="form-group">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" required
+                        autocomplete="username">
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required
+                        autocomplete="current-password">
+                </div>
+
+                <button type="submit" class="btn-login">Entrar</button>
+            </form>
+
+            <div class="forgot-password">
+                <a href="#">Esqueceu a senha? Contate o administrador.</a>
+            </div>
+
+            <footer>
+                © 2026 VoIP Security PyzerFS
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
